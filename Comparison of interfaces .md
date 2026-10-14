@@ -1,3 +1,21 @@
+# Interface 
+```
+           Interface 
+               |
+     ———————————————————————
+    |                       |
+ External.               Internal
+
+ -GPIO.                  -SPI
+ -PCIE.                  -I²C
+ -ISD CARD.              -UART
+                         -JTAG
+                         -RS232
+                         -CAN
+```
+
+
+
 
 # Interface Comparison: Serial and Peripheral Protocols
 
