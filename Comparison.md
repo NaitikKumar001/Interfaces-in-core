@@ -13,7 +13,7 @@
 | Main Advantage | Simple and easy to debug | Standardised electrical interface | Fewer wires for multiple devices | High speed and full-duplex capability | Multi-node communication and error handling | Minimal wiring | Simple control without a complex communication protocol |
 | Main Limitation | No built-in addressing | Usually point-to-point | Lower speed than many SPI setups | More wires and chip-select management | Requires CAN controller and suitable transceivers | Low bandwidth and device restrictions | No built-in addressing, packet framing, or communication protocol |
 
-
+![Comparison of Communication Interfaces Based on Speed](./IMG-20261014-WA0003.jpg)
 
 
 # Interconnect Protocols Comparison
@@ -43,16 +43,7 @@
 | Error Response | Depends on implementation and signals | Depends on variant | Response signals support error reporting | Response signals support error reporting | PSLVERR can indicate an error |
 | Cache Coherence | Not a defining base feature | TileLink-C supports coherence | Not inherently provided by AXI alone | Not inherently provided by AHB alone | Not provided |
 
-## 3. Performance and Bandwidth
 
-| Factor | Wishbone | TileLink | AMBA AXI | AMBA AHB | AMBA APB |
-|---|---|---|---|---|---|
-| Fixed Maximum Speed | No universal limit | No universal limit | No universal limit | No universal limit | No universal limit |
-| Bandwidth | Depends on data width, clock, and implementation | Depends on variant, width, and clock | Designed for high throughput | Designed for embedded-system throughput | Intended for low-bandwidth peripheral traffic |
-| Latency | Depends on implementation and target response | Depends on variant and target | Depends on arbitration, queues, and target | Depends on wait states and target | Simple but each access has setup/access phases |
-| Concurrency | Implementation-dependent | Variant-dependent | High; independent channels and outstanding transactions | Typically more limited | Generally limited/simple |
-| Hardware Resources | Depends on topology and features | Depends on variant and topology | Can require more buffering and control logic | Moderate | Usually low |
-| Best Performance Use | Suitable for many FPGA IP integrations | SoC interconnects using an appropriate variant | Memory and high-throughput data paths | Embedded memory and system transfers | Low-speed control/status accesses |
 
 ## 4. Signals and Protocol Behaviour
 
