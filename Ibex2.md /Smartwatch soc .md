@@ -1,4 +1,5 @@
 #  Smartwatch SoC
+
 Purpose: Read health and motion sensors, update the display, detect button presses, and communicate with debugging equipment.
 ```
 Internal architecture
