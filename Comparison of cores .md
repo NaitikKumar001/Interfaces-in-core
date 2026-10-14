@@ -12,3 +12,8 @@
 | SweRV EH1 | To provide high instruction throughput for embedded workloads | RV32, 9-stage, dual-issue, in-order pipeline | Networking, storage controllers, and embedded computing | Higher area and design complexity |
 | VexRiscv | To provide a highly configurable processor for FPGA and SoC development | Configurable pipeline, plugins, and extensions | FPGA prototyping, custom SoCs, and processor experiments | Performance, area, and features depend on configuration |
 | SonicBOOM | To explore high-performance general-purpose CPU architecture | Superscalar, out-of-order execution | Advanced CPU research, high-performance prototypes, and demanding compute workloads | High hardware complexity, area, power, and verification requirements |
+
+
+# RISC-V Core Comparison
+
+![RISC-V Core Comparison](./file_000000008618820e98af17180622960d.png)
