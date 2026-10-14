@@ -44,6 +44,7 @@
 | Cache Coherence | Not a defining base feature | TileLink-C supports coherence | Not inherently provided by AXI alone | Not inherently provided by AHB alone | Not provided |
 
 
+![Comparison of Interconnects Based on Complexity](./IMG-20261014-WA0004.jpg)
 
 ## 4. Signals and Protocol Behaviour
 
