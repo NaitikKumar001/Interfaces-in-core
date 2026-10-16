@@ -13,3 +13,9 @@ VexRiscv supports multiple interface options, depending on the selected configur
 | Wishbone | Connects the processor to memory and other hardware components | Small FPGA-based SoCs |
 | AXI4 | Supports memory transactions and communication with other system components | Higher-performance FPGA systems |
 | Avalon | Connects processor interfaces to compatible memory and peripherals | FPGA systems using Intel FPGA tools |
+
+
+
+
+![VexRiscv Interconnect Performance and Complexity Comparison](./file_00000000b3f08211b37ea8dba00c7884.png)
+
