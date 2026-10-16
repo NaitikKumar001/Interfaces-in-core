@@ -89,3 +89,20 @@ TileLink is commonly used in RISC-V SoC designs, particularly those built using 
 | Cache Coherence | Supported by TileLink-C |
 | Variants | TileLink-UL, TileLink-UH, and TileLink-C |
 | Typical Use | On-chip communication in SoCs |
+
+## TileLink Variant Comparison
+
+| Variant | Main Purpose | Explanation |
+|---|---|---|
+| TileLink-UL | Uncached Transactions | Supports simple communication without requiring cache-coherence transactions. |
+| TileLink-UD | Implementation-Dependent | Its meaning and capabilities depend on the specific implementation and documentation. |
+| TileLink-C | Cache-Coherence Transactions | Supports communication between caches to help maintain consistent data in multi-core systems. |
+
+# TileLink-C supports cache-coherence transactions.
+
+-Core 1 changes the value from 10 to 20.
+
+-Core 2 still has the old value 10 in its cache.
+
+-The cache-coherence mechanism coordinates the necessary updates or invalidations so Core 2 does not incorrectly rely on stale data.
+
